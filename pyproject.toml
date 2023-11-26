@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "crud-project"
+version = "0.1.0"
+description = ""
+authors = ["captcha781 <bhuvanesh19112001@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+beanie = "^1.23.6"
+pydantic = {extras = ["email"], version = "^2.5.2"}
+python-decouple = "^3.8"
+fastapi-jwt = "^0.2.0"
+bcrypt = "^4.0.1"
+
+[tool.poetry.scripts]
+start = "crud_project.server:start_server"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
