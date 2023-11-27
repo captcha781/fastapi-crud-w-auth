@@ -13,5 +13,5 @@ app.include_router(UserRouter)
 def start_server():
     uvicorn.run("crud_project.server:app", host='0.0.0.0', port=int(config.port),reload=True, workers=4)
 
-# if __name__ == "__main__":
-    # uvicorn.run("crud_project.server:app", host='0.0.0.0', port=int(config.port),reload=True, workers=4)
+if __name__ == "__main__":
+    uvicorn.run("crud_project.server:app", host='0.0.0.0', port=int(config.port),reload=True, workers=4)

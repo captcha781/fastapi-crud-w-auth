@@ -1,2 +1,2 @@
 docker build .
-docker run --add-host=host.docker.internal:host-gateway --name fastapi_runner -p 6600:6600 d5488285091e
+docker run --add-host=host.docker.internal:host-gateway --name fastapi_runner -p 6600:6600 <Image ID>
