@@ -1,2 +1,3 @@
+In .env file change it to MONGO_URI="mongodb://host.docker.internal:27017"
 docker build .
 docker run --add-host=host.docker.internal:host-gateway --name fastapi_runner -p 6600:6600 <Image ID>
