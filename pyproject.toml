@@ -14,6 +14,7 @@ pydantic = {extras = ["email"], version = "^2.5.2"}
 python-decouple = "^3.8"
 fastapi-jwt = "^0.2.0"
 bcrypt = "^4.0.1"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 
 [tool.poetry.scripts]
 start = "crud_project.server:start_server"
